@@ -4,6 +4,10 @@
 
 .carsboard {
   margin: 5rem;
+
+  @include respond(phone){
+    margin: 0rem;
+  }
   display: grid;
   // grid-template-columns: 30rem min-content 1fr;
   // grid-template-rows: min-content calc(100vh - 5rem);
@@ -29,6 +33,12 @@
 
   &__sidebar {
     grid-row: 2/-1;
+    @include respond(tab-port){
+      z-index: -1;
+    }
+    @include respond(phone){
+      z-index: -1;
+    }
   }
 }
 
@@ -136,6 +146,9 @@
     color: rgba($color-grey-dark-1, 1%);
     font-size: 1.7rem;
     width: 30rem;
+    @include respond(phone){
+      width: 30rem;
+    }
 
     &:focus {
       outline: none;

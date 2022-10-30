@@ -1,16 +1,27 @@
 .sidebar {
     background-color: $color-primary-dark;
     grid-row: 1/-1;
+    position: relative;
     grid-column: sidebar-start/sidebar-end;
-    @include respond(tab-port){
-        position: relative;
-        left: -100%;    
+
+    @include respond(tab-port) {
+        position: absolute;
+        z-index: 500;
+        left: 0%;
+        top: 0;
+        height: 100vh;
+        width: 40%;
     }
+    
     @include respond(phone) {
-        position: relative;
-        left: -100%;
-        
+        position: absolute;
+        z-index: 500;
+        left: 0%;
+        top: 0;
+        height: 100vh;
+        width: 40%;
     }
+
     color: $color-white;
 
     &__box {
@@ -21,10 +32,43 @@
         img {
             width: 100%;
         }
+    } 
+}
+
+.navigation--active{
+    display: none;
+    @include respond(big-desktop){
+        display: block;
+    }
+    @include respond(tab-land){
+        display: block;
+    }
+    @include respond(tab-port){
+        display: none;
+    }
+    @include respond(tab-port){
+        display: none;
     }
 }
 
 .navigation {
+    position: relative;
+
+    &__close {
+        display: none;
+        position: absolute;
+        fill: #000;
+        width: 2rem;
+        height: 2rem;
+        top: 0%;
+        right: -3%;
+        @include respond(tab-port) {
+            display: block;
+        }
+        @include respond(phone) {
+            display: block;
+        }
+    }
     &__list {
         margin-top: 3.5rem;
     }

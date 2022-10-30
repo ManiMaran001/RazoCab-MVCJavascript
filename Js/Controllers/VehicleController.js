@@ -20,6 +20,7 @@ const ControllSearchResults = async () => {
   VehicleResultsView.render(model.getSearchResultSPerPage());
   //render inital pafination button
   PaginationView.render(model.state.search);
+
 };
 
 const LoadTimeShowResults = async () => {
@@ -40,5 +41,11 @@ const init = function () {
   SearchView.addSearchHandler(ControllSearchResults);
   VehicleView.addLoadHandler(ControlVehicle);
   PaginationView.addHandlerClick(controlPagination);
+  document.querySelector(".header__icon").addEventListener("click",function(){
+    document.querySelector(".sidebar").classList.remove("navigation--active")
+  })
+  document.querySelector(".navigation__close").addEventListener("click",function(){
+    document.querySelector(".sidebar").classList.add("navigation--active")
+  })
 };
 init();

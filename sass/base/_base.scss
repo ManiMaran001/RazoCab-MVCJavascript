@@ -10,6 +10,9 @@ html{
     //1rem=10px
     //10/16=62.5%
     font-size: 62.5%;
+    @include respond(phone){
+        font-size: 50%;
+    }
 }
 
 body{
@@ -22,4 +25,11 @@ body{
     display: grid;
     grid-template-rows:min-content calc(100vh - 14rem);
     grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 3rem [content-start] 1fr [content-end] 3rem [full-end];
+    @include respond(tab-port){
+        grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 0rem [content-start] 1fr [content-end] 0rem [full-end];
+    }
+    @include respond(phone){
+        grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 0rem [content-start] 1fr [content-end] 0rem [full-end];
+    }
 }
+

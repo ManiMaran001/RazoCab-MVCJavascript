@@ -3,8 +3,8 @@ import 'ag-grid-community/styles//ag-grid.css';
 import 'ag-grid-community/styles//ag-theme-alpine.css';
 import View from './View';
 class AggridView extends View{
-    _parentElement=document.getElementById("myGrid")
-    _element=document.querySelector(".page");
+    _parentElement=document.getElementById("myGrid");
+
     addHandler(handler){
         window.addEventListener('load',function(){
             handler();

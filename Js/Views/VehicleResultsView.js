@@ -4,7 +4,6 @@ class VehicleResultsView extends View {
   _parentElement = document.querySelector(".board__list");
   _errorMessage="vehicle not found";
   _generateViewMarkup(rec) {
-    console.log(rec)
     return `
         <a href=#${rec.id} class="board__link">
                 <li class="board__item">
@@ -20,6 +19,7 @@ class VehicleResultsView extends View {
         `;
   }
   _generateMarkup() {
+    console.log(this._sidebar)
     return this._data.map(this._generateViewMarkup).join("");
   }
 }
