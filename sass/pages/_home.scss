@@ -1,0 +1,41 @@
+.main {
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(rgba($color-primary-light, .2), rgba($color-primary-dark, .2));
+        border-radius: 20px;
+    }
+
+    &__parts {
+        height: 1000px;
+    }
+
+    grid-row: 2/-1;
+    grid-column: content-start/content-end;
+
+    @include respond(tab-port) {
+        grid-row: 2/-1;
+        grid-column: sidebar-start/full-end;
+        padding: 3rem;
+    }
+
+    @include respond(phone) {
+        grid-row: 2/-1;
+        grid-column: sidebar-start/full-end;
+        padding: 3rem;
+
+    }
+}
+
+.section-dashboard {
+    padding: 2rem 0 5rem 0;
+}
+
+
+.section-aggrid{
+    padding: 0 5rem;
+}

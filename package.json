@@ -1,0 +1,21 @@
+{
+  "name": "cardashboar",
+  "version": "1.0.0",
+  "description": "admin dashbaord crud",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "ManiMaran001",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "ag-grid-community": "^28.2.0",
+    "jquery": "^3.6.1",
+    "node-sass": "^7.0.3"
+  }
+}

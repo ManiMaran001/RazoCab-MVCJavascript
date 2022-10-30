@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script type="module" src="Js/Controllers/VehicleController.js"></script>
+
+
+    <title>razocab | Book a cab</title>
+  </head>
+  <body class="container">
+    <div class="sidebar">
+      <div class="sidebar__box">
+        <img src="./img/razo2.jpg" alt="logo" />
+      </div>
+      <div class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--active">
+            <a href="index.html" class="navigation__link">
+              <svg class="navigation__icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="carsDetailsPage.html" class="navigation__link">
+              <svg class="navigation__icon">
+                <use xlink:href="img/sprite.svg#icon-bar-graph"></use>
+              </svg>
+              <span>car Report</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header class="header">
+      <svg class="header__icon">
+        <use xlink:href="./img/sprite.svg#icon-menu"></use>
+      </svg>
+      <nav class="user-nav">
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="./img/sprite.svg#icon-rocket"></use>
+          </svg>
+        </div>
+        <div class="user-nav__user">
+          <img src="./img/user.jpg" alt="user image" class="user-nav__photo" />
+          <span class="user-nav__name">mani</span>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section-carsboard">
+        <div class="heading-primary">cars case</div>
+        <div class="carsboard">
+          <div class="carsboard__header">
+            <form class="search">
+              <input
+                type="text"
+                class="search__field"
+                placeholder="Search over vehicle owners..."
+              />
+              <button class="btn search__btn">
+                <svg class="search__icon">
+                  <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+                <span>Search</span>
+              </button>
+            </form>
+          </div>
+          <div class="carsboard__sidebar">
+            <ul class="board__list">
+              <!-- <a href="#5ed6604591c37cdc054bcc13" class="board__link">
+                <li class="board__item">
+                  <figure class="board__shape">
+                    <img src="./img/taxi.jpg" alt="pics" class="board__logo">
+                  </figure>
+                  <div class="board__box">
+                    <p class="board__box--p1">vehicle name</p>
+                    <p class="board__box--p2">on travel</p>
+                  </div>
+                </li>
+              </a> -->
+            </ul>
+            <div class="pagination">
+              <!-- <button class="btn--inline pagination__btn--previous">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-arrow-long-left"></use>
+                  </svg>
+                  <span>page 2</span>
+              </button>
+              <button class="btn--inline pagination__btn--next">
+                <span>page 3</span>
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-arrow-long-right"></use>
+                  </svg>
+              </button> -->
+            </div>
+          </div>
+          <div class="carsboard__content">
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

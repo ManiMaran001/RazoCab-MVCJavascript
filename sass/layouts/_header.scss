@@ -1,0 +1,62 @@
+.header {
+    background-color: $color-grey-light-1;
+    grid-column: content-start/content-end;
+    grid-row: 1/2;
+    margin: 2rem 0;
+    padding: 3rem;
+    border-radius: 10px;
+
+    @include respond(tab-port) {
+        grid-column: sidebar-start/full-end;
+        grid-row: 1/2;
+    }
+
+    @include respond(phone) {
+        grid-column: sidebar-start/full-end;
+        grid-row: 1/2;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    color: $color-primary;
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: currentColor;
+    }
+}
+
+.user-nav {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+
+    &>* {
+        padding: 0 2rem;
+        height: 100%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: currentColor;
+    }
+
+    &__name {
+        font-weight: 300;
+        color: currentColor;
+    }
+
+    &__photo {
+        height: 4rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+        border: 2px solid currentColor;
+    }
+}

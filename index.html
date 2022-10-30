@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script type="module" src="Js/Controllers/DashboardController.js"></script>
+
+    <title>razocab | Book a cab</title>
+  </head>
+  <body class="container">
+    <div class="sidebar">
+      <div class="sidebar__box">
+        <img src="./img/razo2.jpg" alt="logo" />
+      </div>
+      <div class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--active">
+            <a href="index.html" class="navigation__link">
+              <svg class="navigation__icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="carsDetailsPage.html" class="navigation__link">
+              <svg class="navigation__icon">
+                <use xlink:href="img/sprite.svg#icon-bar-graph"></use>
+              </svg>
+              <span>car Report</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header class="header">
+      <svg class="header__icon">
+        <use xlink:href="./img/sprite.svg#icon-menu"></use>
+      </svg>
+      <nav class="user-nav">
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="./img/sprite.svg#icon-rocket"></use>
+          </svg>
+        </div>
+        <div class="user-nav__user">
+          <img src="./img/user.jpg" alt="user image" class="user-nav__photo" />
+          <span class="user-nav__name">mani</span>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section-dashboard">
+        <div class="heading-primary">Dashboard</div>
+        <div class="dashboard">
+          <div class="dashboard__box">
+            <svg class="dashboard__icon dashboard__icon--1">
+              <use xlink:href="./img/sprite.svg#icon-users"></use>
+            </svg>
+            <div class="dashboard__text">
+              <div class="dashboard__user dashboard__user--1">Users</div>
+              <div class="dashboard__count dashboard__count--1">123</div>
+            </div>
+          </div>
+          <div class="dashboard__box">
+            <svg class="dashboard__icon dashboard__icon--2">
+              <use xlink:href="./img/sprite.svg#icon-users"></use>
+            </svg>
+            <div class="dashboard__text">
+              <div class="dashboard__user dashboard__user--2">Vehicles</div>
+              <div class="dashboard__count dashboard__count--2">200</div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="spinner">
+          <svg class="spinner__loader">
+            <use xlink:href="./img/sprite.svg#icon-loader"></use>
+          </svg>
+        </div> -->
+      </section>
+      <section class="section-aggrid">
+        <div id="myGrid" class="ag-theme-alpine aggrid"></div>
+      </section>
+      <div class="pagination-comp">
+        <div class="page"></div>
+      </div>
+    </main>
+  </body>
+</html>
