@@ -2,11 +2,12 @@
   "name": "cardashboar",
   "version": "1.0.0",
   "description": "admin dashbaord crud",
-  "main": "index.js",
+  "main": "dist/index.js",
+
   "scripts": {
     "start": "parcel index.html",
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "build": "parcel build"
+    "build": "parcel build index.html"
   },
   "author": "ManiMaran001",
   "license": "ISC",
