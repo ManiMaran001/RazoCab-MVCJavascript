@@ -2,7 +2,7 @@
   "name": "cardashboar",
   "version": "1.0.0",
   "description": "admin dashbaord crud",
-  "main": "dist/index.js",
+  "default": "index.html",
 
   "scripts": {
     "start": "parcel index.html",
