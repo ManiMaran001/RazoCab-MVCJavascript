@@ -36,6 +36,10 @@
 }
 
 
-.section-aggrid{
+.section-aggrid {
     padding: 0 5rem;
+
+    @include respond(phone) {
+        padding: 0rem;
+    }
 }

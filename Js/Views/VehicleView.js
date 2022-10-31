@@ -3,6 +3,14 @@ import View from "./View";
 class VehicleView extends View {
   _parentElement = document.querySelector(".carsboard__content");
   _errorMessage="vehicle not found";
+  initHandler(){
+    document.querySelector(".header__icon").addEventListener("click",function(){
+      document.querySelector(".sidebar").classList.remove("navigation--active")
+    })
+    document.querySelector(".navigation__close").addEventListener("click",function(){
+      document.querySelector(".sidebar").classList.add("navigation--active")
+    })
+  }
   addLoadHandler(handler) {
     ["hashchange", "load"].forEach((ev) =>
       window.addEventListener(ev, handler)

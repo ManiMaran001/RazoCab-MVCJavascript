@@ -10,6 +10,14 @@ class AggridView extends View{
             handler();
         })
     }
+    initHandler(){
+        document.querySelector(".header__icon").addEventListener("click",function(){
+            document.querySelector(".sidebar").classList.remove("navigation--active")
+          })
+          document.querySelector(".navigation__close").addEventListener("click",function(){
+            document.querySelector(".sidebar").classList.add("navigation--active")
+          })
+    }
     _generateMarkup(){
          new Grid(this._parentElement,this._data)
          return ''

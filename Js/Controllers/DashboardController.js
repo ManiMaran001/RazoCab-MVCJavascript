@@ -41,12 +41,7 @@ AggridView.render(gridOptions);
 //publisher subscriber pattern need to start a program from here
 const init = function () {
   AggridView.addHandler(controlAggrid);
-  document.querySelector(".header__icon").addEventListener("click",function(){
-    document.querySelector(".sidebar").classList.remove("navigation--active")
-  })
-  document.querySelector(".navigation__close").addEventListener("click",function(){
-    document.querySelector(".sidebar").classList.add("navigation--active")
-  })
+  AggridView.initHandler();
 };
 init();
 
