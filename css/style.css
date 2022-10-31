@@ -162,7 +162,7 @@ body {
     fill: #087f5b;
     width: 5rem;
     height: 5rem;
-    top: -2%;
+    top: 0%;
     right: -3%; }
     @media only screen and (max-width: 56.25em) {
       .navigation__close {
@@ -262,7 +262,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .spinner {
       margin-top: 5rem;
-      margin: 0 auto; } }
+      margin: 4rem auto; } }
   .spinner__loader {
     height: 5rem;
     width: 5rem;
@@ -414,7 +414,7 @@ body {
   padding: 0 5rem; }
   @media only screen and (max-width: 37.5em) {
     .section-aggrid {
-      padding: 0rem; } }
+      padding: 5rem 0; } }
 
 .section-carsboard {
   padding: 2rem 0 5rem 0; }
