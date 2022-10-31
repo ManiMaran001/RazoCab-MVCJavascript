@@ -9,6 +9,8 @@
     @include respond(tab-port) {
         grid-column: sidebar-start/full-end;
         grid-row: 1/2;
+        margin: 0rem 0;
+    padding: 2rem;
     }
 
     @include respond(phone) {

@@ -33,6 +33,10 @@
 
 .section-dashboard {
     padding: 2rem 0 5rem 0;
+
+    @include respond(phone) {
+        padding: 0rem;
+    }
 }
 
 

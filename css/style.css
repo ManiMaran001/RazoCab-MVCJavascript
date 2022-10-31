@@ -32,6 +32,7 @@ body {
       grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 0rem [content-start] 1fr [content-end] 0rem [full-end]; } }
   @media only screen and (max-width: 37.5em) {
     body {
+      grid-template-rows: min-content calc(100vh - 11rem);
       grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 0rem [content-start] 1fr [content-end] 0rem [full-end]; } }
 
 .heading-primary {
@@ -41,6 +42,9 @@ body {
   background-image: linear-gradient(to right, #52a58c, #065940);
   -webkit-background-clip: text;
   color: transparent; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      margin: 0rem 0rem 2rem 0rem; } }
 
 .heading-secondary {
   color: #000;
@@ -71,7 +75,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .header {
       grid-column: sidebar-start/full-end;
-      grid-row: 1/2; } }
+      grid-row: 1/2;
+      margin: 0rem 0;
+      padding: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .header {
       grid-column: sidebar-start/full-end;
@@ -154,10 +160,10 @@ body {
     display: none;
     position: absolute;
     fill: #087f5b;
-    width: 5rem;
-    height: 5rem;
-    top: -4%;
-    right: -12%; }
+    width: 4rem;
+    height: 4rem;
+    top: -3%;
+    right: -11%; }
     @media only screen and (max-width: 56.25em) {
       .navigation__close {
         display: block; } }
@@ -192,7 +198,8 @@ body {
     font-weight: 400;
     z-index: 10;
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     padding: 1.5rem 2rem; }
   .navigation__icon {
@@ -214,7 +221,8 @@ body {
     padding: 4rem; }
     @media only screen and (max-width: 37.5em) {
       .dashboard__box {
-        grid-column: 1/3; } }
+        grid-column: 1/3;
+        padding: 2rem; } }
   .dashboard__text {
     flex: 0 0 1;
     margin-left: 3rem; }
@@ -398,6 +406,9 @@ body {
 
 .section-dashboard {
   padding: 2rem 0 5rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .section-dashboard {
+      padding: 0rem; } }
 
 .section-aggrid {
   padding: 0 5rem; }
