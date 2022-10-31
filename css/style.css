@@ -160,10 +160,10 @@ body {
     display: none;
     position: absolute;
     fill: #087f5b;
-    width: 4rem;
-    height: 4rem;
-    top: 0%;
-    right: -4%; }
+    width: 5rem;
+    height: 5rem;
+    top: -2%;
+    right: -3%; }
     @media only screen and (max-width: 56.25em) {
       .navigation__close {
         display: block; } }

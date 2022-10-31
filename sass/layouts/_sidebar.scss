@@ -58,10 +58,10 @@
         display: none;
         position: absolute;
         fill: $color-primary;
-        width: 4rem;
-        height: 4rem;
-        top: 0%;
-        right: -4%;
+        width: 5rem;
+        height: 5rem;
+        top: -2%;
+        right: -3%;
         @include respond(tab-port) {
             display: block;
         }
