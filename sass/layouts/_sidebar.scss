@@ -60,8 +60,8 @@
         fill: $color-primary;
         width: 4rem;
         height: 4rem;
-        top: -3%;
-        right: -11%;
+        top: 0%;
+        right: -4%;
         @include respond(tab-port) {
             display: block;
         }
